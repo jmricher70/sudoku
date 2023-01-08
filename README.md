@@ -19,6 +19,14 @@ For the CPU we have the following implementations:
 
 For the GPU we have only one parallel (or many threads) iterative implementation
 
+Note that for GPUs a recursive implementation will often fail due to the amount of
+recursive calls. It is then necessary to use an iterative version of the code.
+
+You can check the code of the source code in file 'src/sudoku_gpu_iterative_parallele.cu'.
+Here, parallel is written with a 'e' at the end like in french ;-)
+There is probably a better way to code this iterative version but I didn't have time to
+do this.
+
 ## Compilation and execution
 
 To compile the binaries, simply type:
