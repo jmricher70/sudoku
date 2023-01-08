@@ -30,5 +30,5 @@ make
 To run a simple performance test to compare the different implementations, type:
 
 ```
-./test.sh
+make tests
 ```
