@@ -80,6 +80,7 @@ clean:
 	rm -rf $(BIN_DIR)/*.exe $(OBJ_DIR)/*.o $(LIB_DIR)/*.a
 
 tests:
+	@chmod +x ./tests.sh
 	./tests.sh
 
 archive:
