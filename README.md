@@ -45,6 +45,7 @@ Results will be put under a subdirectory in directory 'results'.
 You will find the execution time for my processor and GPU in
 'results/AMD_Ryzen_5_5600G_with_Radeon_Graphics_NVIDIA_GeForce_RTX_3050':
 
+```
 ---------------------------------------------------------------
 Implementation           USER  ELAPSED SOLUTIONS
 ---------------------------------------------------------------
@@ -55,5 +56,14 @@ CPU   Parallel Iterative 2.98  2.00      2315
 GPU   Parallel Iterative 4.75  4.84      2315
 ---------------------------------------------------------------
 number of solutions expected is 2315
+```
+# Hardware and software
 
+For the records, I am under Linux Ubuntu 20.04.5 LTS (Focal Fossa)
 
+- AMD Ryzen 5 5600G with Radeon Graphics
+- NVIDIA GeForce RTX 3050
+- g++ (Ubuntu 10.3.0-1ubuntu1~20.04) 10.3.0
+- nvcc release 11.8, V11.8.89
+- CUDA cuda_11.8.r11.8
+- NVidia Driver Version 525.60.11
