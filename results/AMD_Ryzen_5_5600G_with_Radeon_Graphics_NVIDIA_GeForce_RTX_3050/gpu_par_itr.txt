@@ -1,0 +1,32 @@
+- read file examples/2315_solutions.txt
+
+- initial grid
+------------------------
+1| 1 2 5 |7 3 6 |4 0 0 |
+2| 0 0 0 |0 1 8 |5 0 0 |
+3| 0 0 0 |5 0 4 |0 0 0 |
+------------------------
+4| 0 0 0 |0 5 0 |0 2 0 |
+5| 0 0 0 |0 0 0 |0 0 0 |
+6| 0 0 0 |2 7 0 |0 0 0 |
+------------------------
+7| 0 8 3 |0 0 0 |0 0 0 |
+8| 0 0 0 |6 0 2 |3 9 0 |
+9| 0 0 0 |0 0 0 |8 4 7 |
+------------------------
+
+
+- initial grid satisfied ? almost
+
+- evaluate number of permutations:
+-- number of permutations for block 2 = 2
+-- number of permutations for block 9 = 24
+-- number of permutations for block 1 = 720
+- total number of permutations with 3 block(s) = 34560
+
+- cuda  grid( x=34,y=1,z=1 )
+- cuda block( x=1024,y=1,z=1 )
+- start kernel
+
+- number of solutions=2315
+time=4.69  4.79
